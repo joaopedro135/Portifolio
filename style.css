@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #212529;
+    width: 100%;
+}
+.Pagina {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    color: #E9ECEF;
+    background: #212529;
+}
+.Esquerda {
+    height: calc(100% - 40px * 2);
+    margin: 40px 0px 40px 40px;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    background: #343A40;
+}
+.Esquerda > h2 {
+    font-size: 1em;
+    border-radius: 20px;
+    background: #6C757D;
+    box-shadow: 0px 1px 1px #BBDEFB;
+}
+.Links {
+    padding: 5px 10px 5px 10px;    
+    background: #6C757D;
+    border-radius: 20px;
+    text-align: left;
+    box-shadow: 0px 1px 1px #BBDEFB;
+}
+.Links > p {
+    column-gap: 1vw;
+    align-items: center;
+    height: 5vh;
+    display: flex;
+    justify-content: flex-start;
+}
+.Direita {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 40px;
+    padding: 20px;
+    background: #343A40;
+    border-radius: 20px;
+    height: 100%;
+}
+.Cabeçário {
+    display: flex;
+    padding: 15px;
+    background: #6C757D;
+    box-shadow: 0px 1px 1px #BBDEFB;
+    border-radius: 20px;
+    justify-content: space-between;
+}
+.Opção, .Lingua {
+    display: flex;
+    justify-content: space-evenly;
+}
+.Opção > a, .Lingua > a {
+    transition: 0.4s;
+    padding: 15px;
+    color: #F8F9FA;
+    background: #212529;
+    border-radius: 20px;
+    margin: 0px 10px 0px 10px;
+}
+.Opção > a:hover, .Lingua > a:hover {
+    background: #BBDEFB;
+    color: #212529;
+}
+.Seleção > a, .Opção > a, .Lingua > a {
+    text-decoration: none;
+}
+.Seleção {
+    background: #BBDEFB;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 0px 10px 0px 10px;
+}
+.Seleção > a {
+    color: #212529;
+}
+.Info {
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+.Info > h1 {
+    margin-bottom: 20px;
+    width: max-content;
+    background: #6C757D;
+    box-shadow: 0px 1px 1px #BBDEFB;
+    padding: 10px 25px 10px 25px;
+    border-radius: 20px;
+}
+.Info > h2, .Info > h3 {
+    margin: 0px 0px 25px 25px;
+}
+.Info > p {
+    margin: 0px 25px 25px 25px;
+}
+
+@media only screen and (max-width: 768px) {
+    .Pagina {
+        flex-direction: column;
+    }
+    .Esquerda, .Direita {
+        margin: 20px;
+        width: auto;
+    }
+    .Esquerda {
+        margin-bottom: 20px;
+    }
+    .Links > p {
+        height: auto;
+    }
+    .Cabeçário {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .Opção, .Lingua {
+        flex-direction: column;
+    }
+    .Opção > a, .Lingua > a {
+        margin: 5px 0;
+    }
+    .Info > h1 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .Info > p {
+        margin: 10px;
+    }
+}
